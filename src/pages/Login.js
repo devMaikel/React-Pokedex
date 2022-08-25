@@ -2,14 +2,14 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import GeneralContext from '../context/GeneralContext';
+import { fetch644Poke } from '../servicesAPI/requests';
 
 export default function Login() {
   let navigate = useNavigate(); // nova forma de gerenciar history.push no react router V@6
-  const { setIsLogged, setUserData, userData } = useContext(GeneralContext);
+  const { setIsLogged, setUserData } = useContext(GeneralContext);
   const [ inputEmail, setInputEmail ] = useState('');
   const [ inputPassword, setInputPassword ] = useState('');
   const [ loginBtnIsDisabled, setLoginBtnIsDisabled ] = useState(true);
-
 
   useEffect(() => {
     validateInputs();
