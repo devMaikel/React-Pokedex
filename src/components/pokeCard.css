@@ -1,0 +1,10 @@
+.poke-card {
+  background-color: whitesmoke;
+  width: 300px;
+  display: inline-block;
+  margin: 2px;
+}
+
+.poke-name {
+  font-size: 25px;
+}
