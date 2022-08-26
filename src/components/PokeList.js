@@ -5,15 +5,9 @@ import PokeCard from './PokeCard';
 
 
 export default function PokeList() {
-  const { allPokes, setAllPokes, userData, setUserData, nameSearch,
+  const { setAllPokes, nameSearch,
     shownPokes, setShownPokes } = useContext(GeneralContext);
   useEffect(() => {
-    // const getAllPokes = async () => { // pegando todos pokemons da api e adicionando dex numbers
-    //   const response = await fetchAllPoke();
-    //   const data = response.map((e, index) => index >= 0 && { ...e, dexnumber: index +1 });
-    //   setAllPokes(data);
-    // };
-    // getAllPokes();
     const getPokes = async () => {
       const data = await fetch644Poke(151);
       setAllPokes(data);
@@ -29,7 +23,6 @@ export default function PokeList() {
     <section>
       { nameSearch === '' ?
         shownPokes.map((e) => (
-          // (index < 644) && 
           <PokeCard
             key={ e.data.name } 
             name={ e.data.name }
@@ -40,7 +33,6 @@ export default function PokeList() {
             status= { e.data.stats }
           />))
           : shownPokes.filter((e) => (e.data.name).includes(nameSearch)).map((e) => (
-            // (index < 644) && 
             <PokeCard
               key={ e.data.name } 
               name={ e.data.name }
@@ -51,7 +43,6 @@ export default function PokeList() {
               status= { e.data.stats }
             />))
       }
-      {/* <button type='button' onClick={ showMore }>Mostrar mais</button> */}
     </section>
   )
 }

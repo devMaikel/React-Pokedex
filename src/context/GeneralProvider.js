@@ -8,7 +8,7 @@ export default function GeneralProvider( { children }) {
   const [userData, setUserData] = useState({ 
     user: '',
     favPokemons: [],
-    showPokemons: 45,
+    showPokemons: '',
   });
   const [nameSearch, setNameSearch] = useState('');
   const [shownPokes, setShownPokes] = useState([]);
