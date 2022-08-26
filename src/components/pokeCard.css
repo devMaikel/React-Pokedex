@@ -1,6 +1,7 @@
 .poke-card {
-  background-color: whitesmoke;
+  background-color: navajowhite;
   width: 300px;
+  height: 600px;
   display: inline-block;
   margin: 2px;
 }

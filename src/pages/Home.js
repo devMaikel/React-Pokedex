@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import PokeList from '../components/PokeList';
+import SearchBar from '../components/SearchBar';
 import GeneralContext from '../context/GeneralContext'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     <div>
       <Header/>
       <h2>Home</h2>
+      <SearchBar/>
       <PokeList/>
     </div>
   )

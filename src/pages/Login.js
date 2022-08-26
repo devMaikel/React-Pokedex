@@ -42,8 +42,8 @@ export default function Login() {
     <div>
       <Header/>
       <h2>Tela de Login</h2>
-      <input type="text" placeholder="Seu e-mail" autoFocus="1" name="email" onChange={ userOnChange } ></input>
-      <input type="password" placeholder="Senha (opicional)" onChange={ userOnChange } ></input>
+      <input type="text" placeholder="Seu e-mail" autoFocus="1" name="email" onChange={ userOnChange } />
+      <input type="password" placeholder="Senha (opicional)" onChange={ userOnChange } />
 
       <button type='button' onClick={ loginFunction } disabled={ loginBtnIsDisabled } >Login</button>
     </div>

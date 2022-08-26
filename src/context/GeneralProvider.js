@@ -10,6 +10,8 @@ export default function GeneralProvider( { children }) {
     favPokemons: [],
     showPokemons: 45,
   });
+  const [nameSearch, setNameSearch] = useState('');
+  const [shownPokes, setShownPokes] = useState([]);
 
   return (
     <GeneralContext.Provider
@@ -20,6 +22,10 @@ export default function GeneralProvider( { children }) {
         setUserData,
         allPokes, 
         setAllPokes,
+        nameSearch, 
+        setNameSearch,
+        shownPokes, 
+        setShownPokes,
       } }
     >
       { children }
