@@ -9,3 +9,9 @@
 .poke-name {
   font-size: 25px;
 }
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
