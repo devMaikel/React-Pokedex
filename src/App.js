@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={ <Login/> } />
           <Route exact path="/home" element={ <Home/> }/>
-          <Route path="/home/pokemonProfile/:id" element= { <PokeProfile/> }/>
+          <Route path="/pokemonProfile/:id" element= { <PokeProfile/> }/>
         </Routes>
       </GeneralProvider>
     </div>

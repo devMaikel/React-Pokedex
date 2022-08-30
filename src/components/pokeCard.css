@@ -1,7 +1,7 @@
 .poke-card {
   background-color: navajowhite;
   width: 300px;
-  height: 600px;
+  height: 700px;
   display: inline-block;
   margin: 2px;
 }
@@ -13,5 +13,9 @@
 li {
   list-style: none;
   text-align: center;
+  padding-right: 40px;
 }
 
+h5 {
+  text-align: center;
+}

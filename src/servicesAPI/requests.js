@@ -4,11 +4,13 @@ import * as endpoints from './endpoints';
 export const fetchAllPoke = async () => {
   const response = await fetch(endpoints.ALLPOKEMONS_URL);
   const data = await response.json();
-  return data.results
+  return data.results;
 };
 
-export const fetchOnePoke = async (name) => {
-
+export const fetchOnePoke = async (id) => {
+  const response = await fetch(`${endpoints.APOKEMON_URL}${id}`);
+  const data = await response.json();
+  return data;
 };
 
 export const fetch644Poke = async (final, inicial = 1) => {
