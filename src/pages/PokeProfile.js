@@ -40,26 +40,30 @@ export default function PokeProfile() {
         </tbody>
       </table>
       <div>
-        <h4>{pokeData.sprites?.versions["generation-i"].yellow.front_default ? '1º Geração' : 'Não existente na primeira geração'}</h4>
+        <h2>Sprites nos jogos de cada geração</h2>
+        <h4>{pokeData.sprites?.versions["generation-i"].yellow.front_default ? 'Sprite 1º Geração' : 'Sprite não existente na primeira geração'}</h4>
         {pokeData.sprites?.versions["generation-i"].yellow.front_default
           ? <img src={pokeData.sprites?.versions["generation-i"].yellow.front_default} alt={pokeData.name + 'gen 1'}></img>
           : <h5>Pokemon não existente na primeira geração</h5>}
-        <h4>{pokeData.sprites?.versions["generation-ii"].crystal.front_default ? '2º Geração' : 'Não existente na segunda geração'}</h4>
+        <h4>{pokeData.sprites?.versions["generation-ii"].crystal.front_default ? 'Sprite 2º Geração' : 'Sprite não existente na segunda geração'}</h4>
         {pokeData.sprites?.versions["generation-ii"].crystal.front_default
           ? <img src={pokeData.sprites?.versions["generation-ii"].crystal.front_default} alt={pokeData.name + 'gen 1'}></img>
           : <h5>Pokemon não existente na segunda geração</h5>}
-        <h4>{pokeData.sprites?.versions["generation-iii"].emerald.front_default ? '3º Geração' : 'Não existente na terceira geração'}</h4>
+        <h4>{pokeData.sprites?.versions["generation-iii"].emerald.front_default ? 'Sprite 3º Geração' : 'Sprite não existente na terceira geração'}</h4>
         {pokeData.sprites?.versions["generation-iii"].emerald.front_default
           ? <img src={pokeData.sprites?.versions["generation-iii"].emerald.front_default} alt={pokeData.name + 'gen 1'}></img>
           : <h5>Pokemon não existente na terceira geração</h5>}
-        <h4>{pokeData.sprites?.versions["generation-iv"]["diamond-pearl"].front_default ? '4º Geração' : 'Não existente na quarta geração'}</h4>
+        <h4>{pokeData.sprites?.versions["generation-iv"]["diamond-pearl"].front_default ? 'Sprite 4º Geração' : 'Sprite não existente na quarta geração'}</h4>
         {pokeData.sprites?.versions["generation-iv"]["diamond-pearl"].front_default
           ? <img src={pokeData.sprites?.versions["generation-iv"]["diamond-pearl"].front_default} alt={pokeData.name + 'gen 1'}></img>
           : <h5>Pokemon não existente na quarta geração</h5>}
-        <h4>{pokeData.sprites?.versions["generation-v"]["black-white"].front_default ? '5º Geração' : 'Não existente na quinta geração'}</h4>
+        <h4>{pokeData.sprites?.versions["generation-v"]["black-white"].front_default ? 'Sprite 5º Geração' : 'Sprite não existente na quinta geração'}</h4>
         {pokeData.sprites?.versions["generation-v"]["black-white"].front_default
           ? <img src={pokeData.sprites?.versions["generation-v"]["black-white"].front_default} alt={pokeData.name + 'gen 1'}></img>
-          : <h5>Pokemon não existente na quinta geração</h5>}
+          : <h5>Sprite não existente na quinta geração</h5>}
+      </div>
+      <div>
+        <h2>Golpes que esse pokemon pode possuir</h2>
       </div>
     </div>
   )

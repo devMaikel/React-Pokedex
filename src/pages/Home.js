@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import PokeList from '../components/PokeList';
 import SearchBar from '../components/SearchBar';
 import GeneralContext from '../context/GeneralContext'
+import '../style/home.css';
 
 export default function Home() {
   const { isLogged } = useContext(GeneralContext);

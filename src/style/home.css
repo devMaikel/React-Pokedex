@@ -1,0 +1,123 @@
+.palleta {
+  background-color: #f7c097;
+  background-color: #829d74;
+  background-color: #de3c2f;
+  background-color: #eb5f07;
+  background-color: #f18809;
+}
+
+body {
+  background-color: #f8d7bdc8;
+}
+
+.header-div {
+  text-align: center;
+  background-color: #de3c2f;
+  background-image: radial-gradient(#f1890981, #de3c2f);
+  /* background-image: url('https://ae01.alicdn.com/kf/HTB1jxAOPVXXXXXIapXXq6xXFXXX6/Pokemon-Ir-R-tulos-De-Garrafas-De-gua-partido-Wrappers-Ch-de-beb-decora-es-da.jpg_Q90.jpg_.webp');
+  background-position: center; */
+  margin: 0;
+  padding: 0;
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  height: 80px; */
+}
+
+.searchbar-div {
+  margin: 15px;
+  text-align: center;
+  display: flexbox;
+  flex-direction: column;
+  /* padding-top: 80px; */
+}
+
+.searchbar-div h3, h2{
+  padding: 10px;
+  color: #de3c2f;
+}
+
+button {
+  background-image: linear-gradient(#f7c097, #de3c2f);
+  border-radius: 5px;
+  padding: 7px;
+  font-weight: 700;
+  color: #28231f;
+}
+
+.generation-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.searchbar-div input { 
+  width: 50%;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.421);
+  border: solid #f7c097 3px;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #213b65;
+  border-radius: 6px;
+  transition: .5s;
+}
+
+section {
+  display: flex;
+  /* justify-content: stretch; */
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: stretch;
+  margin-left: 15px;
+}
+
+.poke-card {
+  background-color: #f7c097;
+  width: 300px;
+  height: 450px;
+  display: flex;
+  margin: 2px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.poke-card li {
+  color: #eb5f07;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.poke-card table, th, td {
+  border-collapse: collapse;
+  border: 1px solid;
+  text-align: center;
+  width: 0%;
+}
+
+.poke-card th {
+  background-color: #eb5e078b;
+}
+
+.poke-card table {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.poke-name {
+  font-size: 25px;
+  color: #eb5e078b;
+}
+
+.poke-card h5 {
+  text-align: center;
+  text-decoration: none;
+  color: purple;
+}
+
+a {
+  text-decoration: none;
+}
+

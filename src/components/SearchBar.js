@@ -50,16 +50,18 @@ export default function SearchBar() {
   };
 
   return (
-    <div>
+    <div className='searchbar-div'>
       <h2>Selecione qual geração deseja que seja mostrada</h2>
-      { generations.map((e) => (<button 
-      type='button'
-      key={ e }
-      name={ e }
-      onClick= { (event) => selectGeneration(event) }
-      >
-        { e }
-      </button>))}
+      <div className='generation-buttons'>
+        { generations.map((e) => (<button 
+        type='button'
+        key={ e }
+        name={ e }
+        onClick= { (event) => selectGeneration(event) }
+        >
+          { e }
+        </button>))}
+      </div>
       <h3>Pesquisar Pokemon por nome</h3>
       <input 
         type="text" 
@@ -69,14 +71,16 @@ export default function SearchBar() {
       />
       <br />
       <h3>Pesquisar pokemons por tipo</h3>
-      { pokeTypes.map((e, index) => (<button 
-        key={ e }
-        type='button'
-        name={ e }
-        onClick= {(event) => searchByType(event)}
-      >
-        { e }
-      </button>)) }
+      <div className='generation-buttons'>
+        { pokeTypes.map((e, index) => (<button 
+          key={ e }
+          type='button'
+          name={ e }
+          onClick= {(event) => searchByType(event)}
+        >
+          { e }
+        </button>)) }
+      </div>
     </div>
   )
 }

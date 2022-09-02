@@ -1,0 +1,30 @@
+.login-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+  background-image: url('https://observatoriodocinema.uol.com.br/wp-content/uploads/2020/04/kit-especial-pokemon-go-personalizados-pokemon.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.login-div h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+input { 
+  width: 50%;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.421);
+  border: solid #f7c097 3px;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #213b65;
+  border-radius: 6px;
+  transition: .5s;
+}

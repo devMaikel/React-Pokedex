@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import GeneralContext from '../context/GeneralContext';
+import '../style/login.css';
 
 export default function Login() {
   let navigate = useNavigate(); // nova forma de gerenciar history.push no react router V@6
@@ -40,11 +41,12 @@ export default function Login() {
   return (
     <div>
       <Header/>
-      <h2>Tela de Login</h2>
-      <input type="text" placeholder="Seu e-mail" autoFocus="1" name="email" onChange={ userOnChange } />
-      <input type="password" placeholder="Senha (opicional)" onChange={ userOnChange } />
-
-      <button type='button' onClick={ loginFunction } disabled={ loginBtnIsDisabled } >Login</button>
+      <div className='login-div'>
+        <h2>Faça o seu login</h2>
+        <input type="text" placeholder="Seu e-mail" autoFocus="1" name="email" onChange={ userOnChange } />
+        <input type="password" placeholder="Senha (opicional)" onChange={ userOnChange } />
+        <button type='button' onClick={ loginFunction } disabled={ loginBtnIsDisabled } >Login</button>
+      </div>
     </div>
   )
 }

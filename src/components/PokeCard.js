@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './pokeCard.css'
+// import '../style/pokeCard.css'
 
 export default function PokeCard({name, index, sprite, abilities, types, status}) {
 
@@ -23,9 +23,26 @@ export default function PokeCard({name, index, sprite, abilities, types, status}
           { types.map((e) => <li key={e.type.name}>{e.type.name}</li>) }
         </ul>
         <h5>BASE STATUS</h5>
-        <ul>
+        <table>
+          <thead>
+            <tr>
+              <th>HP</th>
+              <th>ATK</th>
+              <th>DEF</th>
+              <th>SP. ATK</th>
+              <th>SP. DEF</th>
+              <th>SPD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              {status.map((e, index) => <td key={`${index}${e.stat.name}`}>{e.base_stat}</td>)}
+            </tr>
+          </tbody>
+        </table>
+        {/* <ul>
           { status.map((e) => <li key={e.stat.name}>{`${e.stat.name} - ${e.base_stat}`}</li>)}
-        </ul>
+        </ul> */}
       </div>
     </Link>
   )

@@ -3,13 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import GeneralContext from '../context/GeneralContext';
 import { fetch644Poke } from '../servicesAPI/requests';
 import PokeCard from './PokeCard';
-
+// import '../style/pokeList.css'
 
 export default function PokeList() {
   const { setAllPokes, nameSearch,
     shownPokes, setShownPokes } = useContext(GeneralContext);
-
-  const navigate = useNavigate();
 
   useEffect(() => {
     const getPokes = async () => {
