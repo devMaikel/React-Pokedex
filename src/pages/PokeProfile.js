@@ -64,6 +64,9 @@ export default function PokeProfile() {
       </div>
       <div>
         <h2>Golpes que esse pokemon pode possuir</h2>
+        <ul>
+          {(pokeData.moves).map((e) => <li>{e.move.name}</li>)}
+        </ul>
       </div>
     </div>
   )
