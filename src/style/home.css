@@ -48,6 +48,7 @@ button {
 .generation-buttons {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .searchbar-div input { 
@@ -75,7 +76,7 @@ section {
 .poke-card {
   background-color: #f7c097;
   width: 300px;
-  height: 450px;
+  height: 490px;
   display: flex;
   margin: 2px;
   flex-direction: column;

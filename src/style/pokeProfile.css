@@ -1,0 +1,68 @@
+* {
+  text-align: center;
+  align-content: center;
+}
+
+.pokeProfile-div {
+  padding-top: 25px;
+}
+
+.pokeProfile-div h1 {
+  padding-bottom: 20px;
+}
+
+.pokeProfile-div table, th, td {
+  border-collapse: collapse;
+  border: 1px solid;
+  text-align: center;
+  width: 0%;
+}
+
+.pokeProfile-div th {
+  background-color: #eb5e078b;
+}
+
+.pokeProfile-div table {
+  margin-top: 8px;
+  width: 80%;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+}
+
+.sprites-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sprite-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.sprite-div img {
+  width: 120px;
+  padding-top: 10px;
+}
+
+.moves-div {
+  padding: 5px;
+}
+
+.moves-div ul {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.moves-div li {
+  padding: 15px;
+  border: 1px solid gray;
+  background-color: aqua;
+}
+

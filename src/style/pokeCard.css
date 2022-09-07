@@ -1,0 +1,16 @@
+table {
+  color: black;
+  bottom: 150px;
+}
+
+h5 {
+  padding: 3px;
+}
+
+.buttons-div {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}

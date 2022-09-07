@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
 import GeneralContext from '../context/GeneralContext';
 import {fetch644Poke} from '../servicesAPI/requests';
 
@@ -81,6 +82,10 @@ export default function SearchBar() {
           { e }
         </button>)) }
       </div>
+      <br />
+      <Link to='/favorites'>
+      <button>Meus favoritos</button>
+      </Link>
     </div>
   )
 }
