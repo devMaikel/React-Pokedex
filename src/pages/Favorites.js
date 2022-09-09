@@ -8,7 +8,7 @@ export default function Favorites() {
 
   return (
     <div>
-      <br/><br/> {/* preguiça de fazer css só pra isso xD */}
+      <br/><br/> {/* preguiça de fazer css só pra isso xD  */}
       <h1>Favorites</h1>
       <br/><br/> {/* preguiça de fazer css só pra isso xD */}
       { (userData.favPokemons.length > 0) 
