@@ -3,66 +3,127 @@
   align-content: center;
 }
 
-.pokeProfile-div {
-  padding-top: 25px;
+@media only screen and (max-width: 614px) {
+  .pokeProfile-div table {
+    margin-top: 8px;
+    padding-top: 10px;
+    width: 80%;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    font-size: 13px;
+  }
+
+  .pokeProfile-div table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+    width: 0%;
+  }
+
+  .pokeProfile-div th {
+    background-color: #eb5e078b;
+  }
+
+  .sprites-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sprite-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .sprite-div img {
+    width: 120px;
+    padding-top: 10px;
+  }
+
+  .moves-div {
+    padding: 5px;
+  }
+
+  .moves-div ul {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .moves-div li {
+    padding: 5px;
+    border: 1px solid gray;
+    background-color: aqua;
+  }
+
 }
 
-.pokeProfile-div h1 {
-  padding-bottom: 20px;
-}
+@media only screen and (min-width: 615px){
+  .pokeProfile-div {
+    padding-top: 25px;
+  }
 
-.pokeProfile-div table, th, td {
-  border-collapse: collapse;
-  border: 1px solid;
-  text-align: center;
-  width: 0%;
-}
+  .pokeProfile-div h1 {
+    padding-bottom: 20px;
+  }
 
-.pokeProfile-div th {
-  background-color: #eb5e078b;
-}
+  .pokeProfile-div table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+    width: 0%;
+  }
 
-.pokeProfile-div table {
-  margin-top: 8px;
-  width: 80%;
-  text-align: center;
-  align-content: center;
-  margin: auto;
-}
+  .pokeProfile-div th {
+    background-color: #eb5e078b;
+  }
 
-.sprites-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .pokeProfile-div table {
+    margin-top: 8px;
+    width: 80%;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+  }
 
-.sprite-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
+  .sprites-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.sprite-div img {
-  width: 120px;
-  padding-top: 10px;
-}
+  .sprite-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-.moves-div {
-  padding: 5px;
-}
+  .sprite-div img {
+    width: 120px;
+    padding-top: 10px;
+  }
 
-.moves-div ul {
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-}
+  .moves-div {
+    padding: 5px;
+  }
 
-.moves-div li {
-  padding: 15px;
-  border: 1px solid gray;
-  background-color: aqua;
-}
+  .moves-div ul {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
 
+  .moves-div li {
+    padding: 15px;
+    border: 1px solid gray;
+    background-color: aqua;
+  }
+}

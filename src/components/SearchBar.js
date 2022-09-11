@@ -17,6 +17,7 @@ export default function SearchBar() {
   useEffect(() => {
     setSelectedGen(generations[0]);
     setSelectedType(pokeTypes[(pokeTypes.length-1)]);
+    setNameSearch('');
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
