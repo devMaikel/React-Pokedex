@@ -6,119 +6,267 @@
   background-color: #f18809;
 }
 
-body {
-  background-color: #f8d7bdc8;
+@media only screen and (max-width: 450px) and (max-height: 650px) {
+  body {
+    background-color: #f8d7bdc8;
+  }
+
+  .header-div {
+    text-align: center;
+    background-color: #de3c2f;
+    background-image: radial-gradient(#f1890981, #de3c2f);
+    /* background-image: url('https://ae01.alicdn.com/kf/HTB1jxAOPVXXXXXIapXXq6xXFXXX6/Pokemon-Ir-R-tulos-De-Garrafas-De-gua-partido-Wrappers-Ch-de-beb-decora-es-da.jpg_Q90.jpg_.webp');
+    background-position: center; */
+    margin: 0;
+    padding: 0;
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    height: 80px; */
+  }
+
+  .searchbar-div {
+    margin: 15px;
+    text-align: center;
+    display: flexbox;
+    flex-direction: column;
+    /* padding-top: 80px; */
+  }
+
+  .searchbar-div h3, h2{
+    padding: 10px;
+    color: #de3c2f;
+  }
+
+  #selected {
+    background-image: none;
+    background-color: #f2d3ae;
+  }
+
+  #selected:hover {
+    background-color: rgb(208, 80, 25);
+  }
+
+  button {
+    background-image: linear-gradient(#f7c097, #de3c2f);
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: 700;
+    color: #28231f;
+  }
+
+  .generation-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  button:hover {
+    background-image: none;
+    background-color: #f2d3ae;
+  }
+
+  .searchbar-div input { 
+    width: 50%;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.421);
+    border: solid #f7c097 3px;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #213b65;
+    border-radius: 6px;
+    transition: .5s;
+  }
+
+  section {
+    display: flex;
+    /* justify-content: stretch; */
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: stretch;
+    margin-left: 15px;
+  }
+
+  .poke-card {
+    background-color: #f7c097;
+    width: 300px;
+    height: 490px;
+    display: flex;
+    margin: 2px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .poke-card li {
+    color: #eb5f07;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .poke-card table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+    width: 0%;
+  }
+
+  .poke-card th {
+    background-color: #eb5e078b;
+  }
+
+  .poke-card table {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .poke-name {
+    font-size: 25px;
+    color: #eb5e078b;
+  }
+
+  .poke-card h5 {
+    text-align: center;
+    text-decoration: none;
+    color: purple;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
 }
 
-.header-div {
-  text-align: center;
-  background-color: #de3c2f;
-  background-image: radial-gradient(#f1890981, #de3c2f);
-  /* background-image: url('https://ae01.alicdn.com/kf/HTB1jxAOPVXXXXXIapXXq6xXFXXX6/Pokemon-Ir-R-tulos-De-Garrafas-De-gua-partido-Wrappers-Ch-de-beb-decora-es-da.jpg_Q90.jpg_.webp');
-  background-position: center; */
-  margin: 0;
-  padding: 0;
-  /* position: fixed;
-  width: 100%;
-  top: 0;
-  height: 80px; */
-}
+@media only screen and (min-width: 451px) and (min-height: 651px) {
+  body {
+    background-color: #f8d7bdc8;
+  }
 
-.searchbar-div {
-  margin: 15px;
-  text-align: center;
-  display: flexbox;
-  flex-direction: column;
-  /* padding-top: 80px; */
-}
+  .header-div {
+    text-align: center;
+    background-color: #de3c2f;
+    background-image: radial-gradient(#f1890981, #de3c2f);
+    /* background-image: url('https://ae01.alicdn.com/kf/HTB1jxAOPVXXXXXIapXXq6xXFXXX6/Pokemon-Ir-R-tulos-De-Garrafas-De-gua-partido-Wrappers-Ch-de-beb-decora-es-da.jpg_Q90.jpg_.webp');
+    background-position: center; */
+    margin: 0;
+    padding: 0;
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    height: 80px; */
+  }
 
-.searchbar-div h3, h2{
-  padding: 10px;
-  color: #de3c2f;
-}
+  .searchbar-div {
+    margin: 15px;
+    text-align: center;
+    display: flexbox;
+    flex-direction: column;
+    /* padding-top: 80px; */
+  }
 
-button {
-  background-image: linear-gradient(#f7c097, #de3c2f);
-  border-radius: 5px;
-  padding: 7px;
-  font-weight: 700;
-  color: #28231f;
-}
+  .searchbar-div h3, h2{
+    padding: 10px;
+    color: #de3c2f;
+  }
 
-.generation-buttons {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+  #selected {
+    background-image: none;
+    background-color: #f2d3ae;
+  }
 
-.searchbar-div input { 
-  width: 50%;
-  margin-bottom: 10px;
-  background: rgba(255, 255, 255, 0.421);
-  border: solid #f7c097 3px;
-  outline: none;
-  padding: 10px;
-  font-size: 16px;
-  color: #213b65;
-  border-radius: 6px;
-  transition: .5s;
-}
+  #selected:hover {
+    background-color: rgb(208, 80, 25);
+  }
 
-section {
-  display: flex;
-  /* justify-content: stretch; */
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: stretch;
-  margin-left: 15px;
-}
+  button {
+    background-image: linear-gradient(#f7c097, #de3c2f);
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: 700;
+    color: #28231f;
+  }
 
-.poke-card {
-  background-color: #f7c097;
-  width: 300px;
-  height: 490px;
-  display: flex;
-  margin: 2px;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
+  .generation-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
-.poke-card li {
-  color: #eb5f07;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
+  button:hover {
+    background-image: none;
+    background-color: #f2d3ae;
+  }
 
-.poke-card table, th, td {
-  border-collapse: collapse;
-  border: 1px solid;
-  text-align: center;
-  width: 0%;
-}
+  .searchbar-div input { 
+    width: 50%;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.421);
+    border: solid #f7c097 3px;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #213b65;
+    border-radius: 6px;
+    transition: .5s;
+  }
 
-.poke-card th {
-  background-color: #eb5e078b;
-}
+  section {
+    display: flex;
+    /* justify-content: stretch; */
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: stretch;
+    margin-left: 15px;
+  }
 
-.poke-card table {
-  margin-top: 8px;
-  width: 100%;
-}
+  .poke-card {
+    background-color: #f7c097;
+    width: 300px;
+    height: 490px;
+    display: flex;
+    margin: 2px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-.poke-name {
-  font-size: 25px;
-  color: #eb5e078b;
-}
+  .poke-card li {
+    color: #eb5f07;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
 
-.poke-card h5 {
-  text-align: center;
-  text-decoration: none;
-  color: purple;
-}
+  .poke-card table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+    width: 0%;
+  }
 
-a {
-  text-decoration: none;
-}
+  .poke-card th {
+    background-color: #eb5e078b;
+  }
 
+  .poke-card table {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .poke-name {
+    font-size: 25px;
+    color: #eb5e078b;
+  }
+
+  .poke-card h5 {
+    text-align: center;
+    text-decoration: none;
+    color: purple;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
