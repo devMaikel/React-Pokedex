@@ -17,9 +17,9 @@
 }
 
 input { 
-  width: 50%;
+  width: 300px;
   margin-bottom: 10px;
-  background: rgba(255, 255, 255, 0.421);
+  background: rgba(255, 255, 255, 0.751);
   border: solid #f7c097 3px;
   outline: none;
   padding: 10px;
@@ -27,4 +27,12 @@ input {
   color: #213b65;
   border-radius: 6px;
   transition: .5s;
+}
+
+button:disabled {
+  background-image: none;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+
 }
