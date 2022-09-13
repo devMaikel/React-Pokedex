@@ -26,5 +26,6 @@
   * Axios
   
   #### Link do projeto no github pages: https://devmaikel.github.io/React-Pokedex/
+  #### Meu linkdin: https://www.linkedin.com/in/maikelmy/
   
   Até mais! ^^
