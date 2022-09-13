@@ -1,6 +1,6 @@
   # Projeto React-Pokedex
   
-  Olá ! Este é um projeto pessoal que desenvolvi usando algumas das tecnologias que aprendi até o momento no módulo de front-end do curso da Trybe.
+  Olá ! Este é um projeto pessoal que desenvolvi usando algumas das tecnologias que aprendi no módulo de front-end do curso da Trybe.
   
    ## Funcionalidades:
     
