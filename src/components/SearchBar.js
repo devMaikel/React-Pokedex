@@ -6,7 +6,7 @@ import Loading from './Loading';
 
 
 export default function SearchBar() {
-  const { nameSearch, setNameSearch, setShownPokes, allPokes, setAllPokes } = useContext(GeneralContext);
+  const { nameSearch, setNameSearch, setShownPokes, allPokes, setAllPokes, userData } = useContext(GeneralContext);
   const [ actualSearch, setActualSearch ] = useState('');
   const [ selectedGen, setSelectedGen ] = useState('');
   const [ selectedType, setSelectedType ] = useState('');
@@ -146,9 +146,11 @@ export default function SearchBar() {
         </button>)) }
       </div>
       <br /> */}
-      <Link to='/favorites'>
-      <button>Meus favoritos</button>
-      </Link>
+      {(userData.favPokemons.length > 0) ? (<Link to='/favorites'>
+      <button disabled={ !(userData.favPokemons.length > 0)}>Meus favoritos</button>
+      </Link>) : (<Link to='/favorites'>
+      <button disabled={ !(userData.favPokemons.length > 0)}>Meus favoritos ~Vazio~</button>
+      </Link>)}
     </div>
   )
 }
