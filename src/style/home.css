@@ -222,7 +222,7 @@
     /* justify-content: stretch; */
     flex-wrap: wrap;
     width: 100%;
-    justify-content: stretch;
+    justify-content: center;
     margin-left: 15px;
   }
 

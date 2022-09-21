@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import GeneralContext from '../context/GeneralContext';
 import {fetch644Poke} from '../servicesAPI/requests';
+import Loading from './Loading';
 
 
 export default function SearchBar() {
@@ -9,6 +10,7 @@ export default function SearchBar() {
   const [ actualSearch, setActualSearch ] = useState('');
   const [ selectedGen, setSelectedGen ] = useState('');
   const [ selectedType, setSelectedType ] = useState('');
+  const [ isLoading, setIsLoading ] = useState(false);
   // const [ selectedAtt, setSelectedAtt ] = useState(''); funcionalidade não implementada
 
   const pokeTypes = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Mostrar todos'];
@@ -29,6 +31,7 @@ export default function SearchBar() {
   };
 
   const selectGeneration = async ({ target: { name }}) => {
+    setIsLoading(true);
     setSelectedType(pokeTypes[(pokeTypes.length-1)]);
     let data = [];
     if(name === 'Red, Green, Blue e Yellow' ){
@@ -54,6 +57,7 @@ export default function SearchBar() {
     setShownPokes(data);
     setNameSearch('');
     setActualSearch('');
+    setIsLoading(false);
   };
 
   const searchByType = ({ target: { name }}) => {
@@ -107,6 +111,7 @@ export default function SearchBar() {
           { e }
         </button>))}
       </div>
+      { isLoading && <Loading/>}
       <h3>Pesquisar Pokemon por nome</h3>
       <input 
         type="text" 
