@@ -111,7 +111,8 @@ export default function SearchBar() {
           { e }
         </button>))}
       </div>
-      { isLoading && <Loading/>}
+      <br />
+      { isLoading && <Loading name='empty'/>}
       <h3>Pesquisar Pokemon por nome</h3>
       <input 
         type="text" 
@@ -146,11 +147,9 @@ export default function SearchBar() {
         </button>)) }
       </div>
       <br /> */}
-      {(userData.favPokemons.length > 0) ? (<Link to='/favorites'>
-      <button disabled={ !(userData.favPokemons.length > 0)}>Meus favoritos</button>
-      </Link>) : (<Link to='/favorites'>
-      <button disabled={ !(userData.favPokemons.length > 0)}>Meus favoritos ~Vazio~</button>
-      </Link>)}
+      {!(userData.favPokemons === null || userData.favPokemons?.length === 0) ? (<Link to='/favorites'>
+        <button>Meus favoritos</button></Link>)
+        : (<button disabled={ true }>Meus favoritos ~Vazio~</button>)}
     </div>
   )
 }

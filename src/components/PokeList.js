@@ -35,7 +35,7 @@ export default function PokeList() {
             abilities= {e.data.abilities}
             types= { e.data.types }
             status= { e.data.stats }
-          /> : <Loading/>))
+          /> : <Loading name={ e.data.name } key={ e.data.name }/>))
           : shownPokes.filter((e) => (e.data.name).includes(nameSearch)).map((e) => (
             <PokeCard
               key={ e.data.name } 
