@@ -12,6 +12,7 @@ export default function GeneralProvider( { children }) {
   });
   const [nameSearch, setNameSearch] = useState('');
   const [shownPokes, setShownPokes] = useState([]);
+  const [shownPokesNumber, setShownPokesNumber] = useState(30);
 
   return (
     <GeneralContext.Provider
@@ -26,6 +27,8 @@ export default function GeneralProvider( { children }) {
         setNameSearch,
         shownPokes, 
         setShownPokes,
+        shownPokesNumber,
+        setShownPokesNumber,
       } }
     >
       { children }

@@ -7,7 +7,7 @@ import Loading from './Loading';
 
 export default function PokeList() {
   const { setAllPokes, nameSearch,
-    shownPokes, setShownPokes } = useContext(GeneralContext);
+    shownPokes, setShownPokes, shownPokesNumber, setShownPokesNumber } = useContext(GeneralContext);
   const [ isLoading, setIsLoading ] = useState(true);
 
   useEffect(() => {
@@ -24,19 +24,10 @@ export default function PokeList() {
 
   const OFC_ART_STR = 'official-artwork';
   return (
-    <section>
-      { nameSearch === '' ?
-        shownPokes.map((e) => ( (!isLoading) ?
-          <PokeCard
-            key={ e.data.name } 
-            name={ e.data.name }
-            index= { e.data.id }
-            sprite= { e.data.sprites.other[OFC_ART_STR].front_default}
-            abilities= {e.data.abilities}
-            types= { e.data.types }
-            status= { e.data.stats }
-          /> : <Loading name={ e.data.name } key={ e.data.name }/>))
-          : shownPokes.filter((e) => (e.data.name).includes(nameSearch)).map((e) => (
+    <div>
+      <section>
+        { nameSearch === '' ?
+          shownPokes.map((e, index) => index < shownPokesNumber && ( (!isLoading) ?
             <PokeCard
               key={ e.data.name } 
               name={ e.data.name }
@@ -45,8 +36,27 @@ export default function PokeList() {
               abilities= {e.data.abilities}
               types= { e.data.types }
               status= { e.data.stats }
-            />))
-      }
-    </section>
+            /> : <Loading name={ e.data.name } key={ e.data.name }/>))
+            : shownPokes.filter((e) => (e.data.name).includes(nameSearch.toLowerCase())).map((e) =>(
+              <PokeCard
+                key={ e.data.name } 
+                name={ e.data.name }
+                index= { e.data.id }
+                sprite= { e.data.sprites.other[OFC_ART_STR].front_default}
+                abilities= {e.data.abilities}
+                types= { e.data.types }
+                status= { e.data.stats }
+              />))
+        }
+      </section>
+      <button
+        type='button'
+        onClick = { () => setShownPokesNumber(shownPokesNumber+30) }
+        className = 'mostrarMaisBtn'
+        >
+          Mostrar mais
+        </button>
+    </div>
+
   )
 }

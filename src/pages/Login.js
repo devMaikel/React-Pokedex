@@ -44,7 +44,7 @@ export default function Login() {
       <div className='login-div'>
         <h2>Faça o seu login</h2>
         <input type="text" placeholder="Seu e-mail" autoFocus="1" name="email" onChange={ userOnChange } />
-        <input type="password" placeholder="Senha (opicional)" onChange={ userOnChange } />
+        {/* <input type="password" placeholder="Senha (opicional)" onChange={ userOnChange } /> */}
         <button type='button' onClick={ loginFunction } disabled={ loginBtnIsDisabled } >Login</button>
       </div>
     </div>

@@ -6,7 +6,15 @@ import Loading from './Loading';
 
 
 export default function SearchBar() {
-  const { nameSearch, setNameSearch, setShownPokes, allPokes, setAllPokes, userData } = useContext(GeneralContext);
+  const { 
+    nameSearch, 
+    setNameSearch, 
+    setShownPokes, 
+    allPokes, 
+    setAllPokes, 
+    userData,
+    setShownPokesNumber,
+  } = useContext(GeneralContext);
   const [ actualSearch, setActualSearch ] = useState('');
   const [ selectedGen, setSelectedGen ] = useState('');
   const [ selectedType, setSelectedType ] = useState('');
@@ -27,12 +35,13 @@ export default function SearchBar() {
   }, []);
 
   const searchByName = ({target}) => {
-    setNameSearch(target.value);
+    setNameSearch((target.value));
   };
 
   const selectGeneration = async ({ target: { name }}) => {
     setIsLoading(true);
     setSelectedType(pokeTypes[(pokeTypes.length-1)]);
+    setShownPokesNumber(30);
     let data = [];
     if(name === 'Red, Green, Blue e Yellow' ){
       data = await fetch644Poke(151);

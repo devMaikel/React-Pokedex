@@ -142,6 +142,11 @@
   .poke-card img {
     width: 70px;
   }
+
+  .mostrarMaisBtn {
+    width: 50%;
+    height: 40px;
+  }
 }
 
 @media only screen and (min-width: 615px){
@@ -273,5 +278,10 @@
 
   a {
     text-decoration: none;
+  }
+
+  .mostrarMaisBtn {
+    width: 50%;
+    height: 15%;
   }
 }
